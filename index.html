@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="background-video.mp4" type="video/mp4">
+    </video>
+    
+    <div class="content">
+        <div class="content-wrapper">
+            <h1>10 Second Math Game</h1>
+        
+            <span class="problem">1 + 2</span>
+            <form>
+                <input type="number" name="result" placeholder="Answer">
+            </form>
+        
+            <h2 class="time">TIME REMAINING <br><span>0</span></h2>
+            <h3 class="score">Score: <span></span></h3>
+            <h3 class="highest-score">Highest Score:<span></span></h3>
+        </div>
+    </div>
     
 </body>
 </html>
