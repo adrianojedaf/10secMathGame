@@ -1,10 +1,8 @@
 body {
     margin: 0;
-    padding: 0;
-    width: 100%;
     position: relative;
     background-color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: monospace
 }
 
 video {
@@ -39,26 +37,29 @@ video {
 h1 {
     color: rgb(179, 186, 250);
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .problem {
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: rgb(173, 109, 30);
 }
 
 input {
     padding: 10px;
-    width: 150px;
+    width: 130px;
     font-size: 20px;
     border-radius: .3em;
-    border: none;
+    border: 2px solid white;
+    color: white;
     margin-top: 1em;
     outline: rgb(173, 109, 30);
+    background-color: transparent;
 }
 
 .time {
     text-align: center;
+    margin-top: 2rem;
 }
 
 .time span {
@@ -72,8 +73,9 @@ input {
 }
 
 .highest-score {
-    font-size: .8rem;
-    margin-top: 10px;
+    font-size: 1.2rem;
+    opacity: .6;
+    margin-top: 15px;
 }
 
 @media (max-width: 850px) {
