@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
+    //Global variables
+    
     var currentQuestion;
+    var score = 0;
+    var highestScore = 1;
     
     //Functions
 
@@ -23,6 +27,7 @@ $(document).ready(function() {
         if(userAnswer == correctAnswer) {
             updateQuestion();
             emptyInput();
+            updateScore();
         } else {
 
         }
@@ -37,6 +42,11 @@ $(document).ready(function() {
         $('input').val('');
     }
 
+    function updateScore() {
+        score += 1;
+        $('.score span').text(score);
+    }
+
     //Events
 
     $('form input').on('keyup', function() {
@@ -45,7 +55,7 @@ $(document).ready(function() {
 
 
     //Game Sequence
-    
+
     updateQuestion();
 
     
