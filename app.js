@@ -96,14 +96,5 @@ $(document).ready(function() {
         checkAnswer(Number($(this).val()), currentQuestion.answer);
     });
 
-
-    //Game Sequence
-
     updateQuestion();
-    checkGameStart();
-
-    
-
-
-
 });
